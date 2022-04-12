@@ -1,86 +1,435 @@
 body {
-  margin: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 800px;
+  background-color: white;
+  color: #42406f;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
 }
+/*フォント変える*/
 
 header {
-  margin-top: 50px;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  left: 0; /*ヘッダー固定*/
+  background-color: white;
+  border-bottom: 1px solid #42406f;
+  z-index: 1;
+}
+
+.up {
+  width: 960px;
+  margin: 0 auto;
+  padding: 14px 0;
+}
+
+nav {
+  margin-left: 600px;
+}
+/*px調整するP238*/
+
+nav ul li {
+  list-style-type: none;
+  float: left;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+/*いらんかもわからんP239*/
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+/*下線の色を変更するに変えてもいいかもP240*/
+
+.topimage {
+  width: 100%;
+  height: 100%; /*いるかわからん*/
+  margin-bottom: 15%;
+  animation-name: fadeInAnime; /*アニメーション*/
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+}
+/*高さ変えてもいいP243*/
+
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.topimage div {
+  height: 80%;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.topimage img {
+  margin-top: 15%;
+}
+
+.topimage .sp {
+  display: none !important;
 }
 
 h1 {
-  padding: 30px 80px 30px 10px;
+  float: right;
+  font-size: 60px;
+  margin-top: 30%;
+  margin-right: 25%;
+}
+/*場所調整する(floatしたときに重ねられないのを解消する)*/
+
+main .About {
+  width: 100%;
   background-color: #dccfe1;
-  color: black;
-  font-size: 50px;
+  /*margin-top: 100px; /*写真とAboutのつなぎの空白部分*/
+  overflow: hidden;
+  padding-top: 10%;
+}
+
+main .About2 {
+  width: 80%;
+  height: 700px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+main .About .About2 .profile {
+  float: right;
+  width: 50%;
+  margin: 10% 0 20% 0;
+}
+
+main .About .About2 .profile span {
+  font-size: x-large;
+  border-bottom: 1px solid #42406f;
+}
+
+main .About .About2 .profile .medium {
+  font-size: large;
+}
+
+main .About .About2 .profileimage {
+  width: 30%;
+  margin: 10% 40% 40% 10%;
+}
+
+/*margin 630px変更してバランス調整する*/
+
+/*P258~*/
+
+main .Works {
+  width: 100%;
+  height: 1250px;
+  background-color: #dccfe1;
+  /*margin-top: 100px; /*AboutとWorksのつなぎの空白部分*/
+  overflow: hidden; /*これがないとうまくWorksの上に空白ができない*/
+}
+
+main .Works2 {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+main .Works .Works2 .item {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 400px 400px;
+  /*grid-template-columns: 1fr 1fr;*/
+  column-gap: 100px;
+  row-gap: 100px;
+  background: #dccfe1;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+main .Works .Works2 .items {
+  background: white;
+  margin: 25px 0 25px 0;
+}
+
+main .Works .Works2 .items img {
+  width: 100%;
+}
+
+/*main .Works .Works2 .items p {
+  background-color: white;
   text-align: center;
+}*/
+
+.items {
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+  /*margin: 10px 8px 10px 16px;*/
+  position: relative; /* 相対位置指定 */
+}
+.items .more {
+  font-size: 200%;
+  text-align: center;
+  padding-top: 60%;
+  color: white;
 }
 
-.box1 {
-  
+.items .next {
+  font-size: 200%;
+  text-align: center;
+  padding-top: 60%;
+  color: white;
 }
 
-.box2 {
-  
+.items .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute; /* 絶対位置指定 */
+  top: 0;
+  left: 0;
+  opacity: 0; /* マスクを表示しない */
+  background-color: rgba(25.88, 25.1, 43.53, 0.5); /* 半透明 */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.items:hover .mask {
+  opacity: 1; /* マスクを表示 */
+}
+
+main .Contact {
+  width: 100%;
+  /*height: 800px;*/
+  background-color: #dccfe1;
+  /*margin-top: 100px; /*WorksとContactのつなぎの空白部分*/
+  overflow: hidden; /*これがないとうまくWorksの上に空白ができない*/
+  padding-top: 10%;
+}
+
+main .Contact2 {
+  width: 80%;
+  height: 400px;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 10%; /*長さ調整する*/
+}
+
+.flowbtn17 {
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+  background-color: white;
+  color: #42406f;
+  border: solid 3px #42406f;
+}
+
+.flowbtn17:hover {
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+}
+
+.flowbtn17 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.flowbtn17.fl_tw2:hover {
+  background-color: #42406f;
+  color: white;
+}
+
+.flowbtn17.insta_btn2:hover {
+  background-color: #42406f;
+  color: white;
+}
+
+ul.sns {
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+
+.sns li {
+  /*flex: 0 0 48%;*/
+  margin: 5%;
+  text-align: center !important;
 }
 
 h2 {
-  margin-top: 50px;
-  color: black;
   text-align: center;
-  border-radius: 10px;
-  clear: both;
+  margin-top: 25px;
+  padding-top: 10%;
+  margin-top: -10%;
 }
-
-nav ul {
-  padding-left: 0;
-  text-align: right;
-}
-
-nav li {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 150px;
-  margin: 0 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  display: block;
-}
-
-nav a:hover {
-  color: black;
-  border-bottom: 5px solid #ff0000;
-}
-
-.photo {
-  float: left;
-}
-
-.profile {
-  float: right;
-}
-
-ol {
-  padding-left: 0;
-}
-
-ol li {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 375px;
-  vertical-align: top;
-  border: solid 1px salmon;
-  padding: 10px;
-  margin: 10px;
-}
-
-/*ここでSNS*/
 
 footer {
+  height: 30px;
+  background-color: #f7cbc8;
+  font-size: x-small;
+  line-height: 30px;
   text-align: center;
-  background-color: #dccfe1;
+}
+
+@media screen and (max-width: 640px) {
+  .up {
+    width: 100%;
+    margin: auto;
+    padding: 14px 0;
+  }
+
+  .logo {
+    width: 240px;
+    margin: auto;
+  }
+  /*なんで247pxかわからんP238*/
+
+  nav {
+    /*float: left;*/
+    margin: auto;
+  }
+  /*px調整するP238*/
+
+  nav ul li {
+    margin-bottom: 60px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  /*いらんかもわからんP239*/
+
+  /*ハンバーガーメニューつくる*/
+
+  .topimage {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+  } /*合ってるのでいじらない*/
+
+  .topimage div {
+    width: 100%;
+    margin: auto;
+    text-align: right;
+  }
+  /*divの意味が分からないP242*/
+
+  .topimage .pc {
+    display: none !important;
+  } /*合ってるのでいじらない*/
+
+  .topimage .sp {
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-top: 30%;
+    /*margin-right: 20%;*/
+  } /*真ん中に寄せる*/
+
+  main .About {
+    width: 100%;
+    height: 600px;
+    background-color: #dccfe1;
+    margin-top: 100px; /*写真とAboutのつなぎの空白部分*/
+    /*overflow: hidden;*/
+  }
+
+  main .About2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  main .About .About2 .profile {
+    float: left;
+    width: 380px;
+    margin: 300px 0 50px 15px;
+  }
+
+  main .About .About2 .profile span {
+    font-size: large;
+    border-bottom: 1px solid black;
+  }
+
+  main .About .About2 .profile .medium {
+    font-size: medium;
+  }
+
+  main .About .About2 .profileimage {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+  /*margin: 0 auto;で真ん中に配置できた*/
+
+  main .About .About2 .profileimage img {
+    position: relative;
+    margin-left: 80px;
+  }
+
+  /*P258~*/
+
+  /*main .Works {
+    width: 100%;
+    height: 1050px;
+    background-color: #dccfe1;
+    margin-top: 100px; /*AboutとWorksのつなぎの空白部分*/
+  /*overflow: hidden; これがないとうまくWorksの上に空白ができない*/
+
+  main .Works2 {
+    width: 100%;
+    height: 1500px; /*Worksの長さに合わせて調整する*/
+    margin: 0 auto;
+  }
+
+  main .Works .Works2 .item {
+    display: block;
+    background: #dccfe1;
+    margin-top: 50px;
+    justify-content: space-evenly;
+  }
+
+  main .Works .Works2 .items {
+    width: 40%;
+    background: white;
+    color: #fff;
+    /*margin: 25px 0 25px 0;*/
+    margin: 0 auto;
+  }
+
+  /*main .Works .Works2 .items p {
+    background-color: black;
+    text-align: center;
+  }文字が表示されていないところを直す*/
+
+  .sns {
+    margin-top: 20%;
+  }
 }
