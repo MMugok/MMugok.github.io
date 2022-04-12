@@ -1,72 +1,145 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Works">Works</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="up">
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Top</a></li>
+            <li><a href="#Aboutt">About</a></li>
+            <li><a href="#Workss">Works</a></li>
+            <li><a href="#Contactt">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h1>Misaki's <br />
-        portfolio</h1>
-      
-      <div class="box1"></div>
-
-      <div class="box2"></div>
-
-      <section>
-        <h2 id="About">About</h2>
-        <div class="photo">
-          <img id="cafe" src="./image/cafe.jpg" width="480" />
+      <div class="topimage">
+        <div>
+          <img
+            class="pc"
+            src="images/topimages-pc.png"
+            width="400"
+            height="400"
+            alt="トップ画像"
+          />
+          <img
+            class="sp"
+            src="images/topimages-sp.png"
+            width="280"
+            height="280"
+            alt="トップ画像"
+          />
+          <h1>Misaki's<br /><br />
+          portfolio</h1>
+          
         </div>
+      </div>
 
-        <div class="profile">
-          <p>
-            森岡実咲
-            <br />
-            武庫川女子大学生活環境学部情報メディア学科
-            <br />
-            ＜資格＞情報セキュリティマネジメント試験ITパスポート試験
-          </p>
+      <div class="About">
+        <div class="About2">
+          <h2 id="Aboutt">About</h2>
+          <section class="profile">
+            <p>
+              <span>森岡実咲</span>
+              <br />
+              <br />
+              <div class="medium">武庫川女子大学 生活環境学部 情報メディア学科
+              <br />
+              <br />
+              ＜資格＞<br />情報セキュリティマネジメント試験<br />ITパスポート試験</div>
+            </p>
+          </section>
+
+          <div class="profileimage">
+            <img src="images/profileimagepc.png"
+              width="290"
+              height="290"
+              alt="プロフィール画像"
+            /> 
+          </div>
         </div>
-      </section>
+      </div>
+
+      <div class="Works">
+        <div class="Works2">
+          <h2 id="Workss">Works</h2>
+          <section>
+            <div class="item">
+
+              <div class="items item1">
+                <a href="./refrigerator.html" ><img src="images/refrigerator.png" alt="冷蔵庫アプリ"/>
+                 <div class="mask">
+                   <div class="more">
+                     MORE
+                   </div>
+                 </div>
+                </a>
+              </div>
+
+              <div class="items item2">
+                <a href="./3DCGbear.html"><img src="images/3DCGbear.png" alt="3DCGの作品"/>
+                 <div class="mask">
+                   <div class="more">
+                     MORE
+                   </div>
+                 </div>
+                </a>
+              </div>
+
+              <div class="items item3">
+                <a href="./packagedesign.html"><img src="images/packagedesign.jpg" alt="パッケージデザイン"/>
+                  <p>パッケージデザイン</p>
+                 <div class="mask">
+                   <div class="more">
+                     MORE
+                   </div>
+                 </div>
+                </a>
+              </div>
+
+
+
+              <div class="items item4">
+                <a href=""><img src="images/" alt="" />
+                 <div class="mask">
+                   <div class="next">
+                    NEXT
+                   </div>
+                 </div>
+                </a>
+              </div>  
+            </div>
+
+          </section>
+        </div>
+      </div>
 
       <section>
-        <h2 id="Works">Works</h2>
-        <ol>
-          <li>画像</li>
-          <li>
-            冷蔵庫管理アプリ <br />
-            冷蔵庫の中身を管理するアプリを考えました。
-          </li>
-          <li>
-            パッケージデザイン<br />
-            商品のパッケージを作りました。
-          </li>
-          <li>画像</li>
-        </ol>
-      </section>
-
-      <section>
-        <h2 id="Contact">Contact</h2>
-        <p>連絡はこちらからお願いします。</p>
+        <div class="Contact">
+         <div class="Contact2">
+           <h2 id="Contactt">Contact</h2>
+            <ul class="sns">
+             <li><a href="https://twitter.com/MM_ugok" class="flowbtn17 fl_tw2"><i class="fab fa-twitter"></i></a></li>
+             <li><a href="https://www.instagram.com/mmmisaki.1019" class="flowbtn17 insta_btn2"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+         </div>
+        </div> 
       </section>
     </main>
 
     <footer>
-      <hr />
-      <p>@2022 Misaki</p>
+      <p>@Misaki's portfolio</p>
     </footer>
   </body>
 </html>
