@@ -22,7 +22,7 @@ header {
   background-color: white;
   border-bottom: 1px solid #42406f;
   /*position: absolute;
-    z-index: 1;*/
+        z-index: 1;*/
   /*P244必要か調べる*/
 }
 
@@ -66,67 +66,61 @@ nav ul li a:hover {
 }
 /*下線の色を変更するに変えてもいいかもP240*/
 
-.refrigerator {
+.sushi {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   background-color: #dccfe1;
   padding-top: 10%;
 }
 /*高さ変えてもいいP243*/
 
-.refrigerator2 {
+.sushi2 {
   /*width: 100%;*/
-  height: 900px;
-  background-color: #f7f8fa; /*画像の背景の白色に合わせてる*/
+  height: 1100px;
+  background-color: #f1f1f1; /*画像の背景の白色に合わせてる*/
   margin: 3%;
 }
 
-.refrigeratorimage {
-  width: 35%;
-  float: left;
-  text-align: right;
-  margin-top: 3%;
+.sushiimage {
+  text-align: center;
+  margin: auto;
 }
 
-.refrigeratorimage .sp {
+.sushiimage .sp {
   display: none;
 }
-.refrigeratorimage .pc {
+.sushiimage .pc {
   display: block;
-  margin-left: 40%; /*調整する*/
+  margin: auto;
 }
 
-.refrigeratorexplanation {
-  width: 45%;
-  float: left;
+.sushiexplanation {
+  width: 50%;
+  clear: both;
   text-align: center;
-  margin-top: 10%;
-  margin-left: 5%;
+  padding-top: 5%;
+  margin: 0 auto;
 }
 /*サイズをmarginで調整しているが別のやり方にする*/
 
-.refrigeratorapp {
+.sushiapp {
   width: 25%;
   margin: 0 auto;
   margin-top: 30%;
 }
-.refrigeratorapp p {
+.sushiapp p {
   text-align: center;
 }
 
-.refrigeratoryoutube {
+.sushiyoutube {
   clear: both;
 }
 
-#back {
-  display: none;
-}
-
 /*.topimage div {
-  width: 960px;
-  margin: 0 auto;
-  text-align: right;
-}*/
+      width: 960px;
+      margin: 0 auto;
+      text-align: right;
+    }*/
 /*divの意味が分からないP242*/
 
 /*P258~*/
@@ -187,7 +181,7 @@ footer {
     margin-left: 0;
   }
 
-  .refrigerator {
+  .sushi {
     width: 100%;
     height: 1300px;
     background-color: #dccfe1;
@@ -195,32 +189,33 @@ footer {
   }
   /*高さ変えてもいいP243*/
 
-  .refrigerator2 {
+  .sushi2 {
     height: 1200px;
-    background-color: #f7f8fa; /*画像の背景の白色に合わせてる*/
+    background-color: #f1f1f1; /*画像の背景の白色に合わせてる*/
     margin: 3%;
   }
 
-  .refrigeratorimage {
+  .sushiimage {
     width: 100%;
     text-align: center;
+    margin: auto;
   }
 
-  .refrigeratorimage .pc {
+  .sushiimage .pc {
     display: none;
   }
-  .refrigeratorimage .sp {
+  .sushiimage .sp {
     display: block;
     margin: auto;
   }
 
-  .refrigeratorexplanation {
+  .sushiexplanation {
     width: 90%;
     text-align: center;
     margin: 3%;
   }
 
-  .refrigeratorapp {
+  .sushiapp {
     width: 80%;
     margin: 0 auto;
     margin-top: 30%;
