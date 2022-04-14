@@ -5,13 +5,11 @@ body {
   font-size: 1em;
   line-height: 1.5em;
 }
-/*フォント変える*/
 
 h1 {
   margin: 0;
   padding: 0;
 }
-/*余白消してる*/
 
 header {
   width: 100%;
@@ -21,9 +19,6 @@ header {
   left: 0; /*ヘッダー固定*/
   background-color: white;
   border-bottom: 1px solid #42406f;
-  /*position: absolute;
-        z-index: 1;*/
-  /*P244必要か調べる*/
 }
 
 .up {
@@ -31,18 +26,15 @@ header {
   margin: 0 auto;
   padding: 14px 0;
 }
-/*よくわかってないP235*/
 
 .logo {
   width: 247px;
   float: left;
 }
-/*なんで247pxかわからんP238*/
 
 nav {
   margin-left: 600px;
 }
-/*px調整するP238*/
 
 nav ul li {
   list-style-type: none;
@@ -54,7 +46,6 @@ nav ul li {
 nav ul li:last-child {
   margin-right: 0;
 }
-/*いらんかもわからんP239*/
 
 nav ul li a {
   color: #42406f;
@@ -64,7 +55,6 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
 }
-/*下線の色を変更するに変えてもいいかもP240*/
 
 .sushi {
   width: 100%;
@@ -72,7 +62,6 @@ nav ul li a:hover {
   background-color: #dccfe1;
   padding-top: 10%;
 }
-/*高さ変えてもいいP243*/
 
 .sushi2 {
   /*width: 100%;*/
@@ -101,7 +90,6 @@ nav ul li a:hover {
   padding-top: 5%;
   margin: 0 auto;
 }
-/*サイズをmarginで調整しているが別のやり方にする*/
 
 .sushiapp {
   width: 25%;
@@ -115,15 +103,6 @@ nav ul li a:hover {
 .sushiyoutube {
   clear: both;
 }
-
-/*.topimage div {
-      width: 960px;
-      margin: 0 auto;
-      text-align: right;
-    }*/
-/*divの意味が分からないP242*/
-
-/*P258~*/
 
 h2 {
   text-align: center;
@@ -187,7 +166,6 @@ footer {
     background-color: #dccfe1;
     padding-top: 10%;
   }
-  /*高さ変えてもいいP243*/
 
   .sushi2 {
     height: 1200px;

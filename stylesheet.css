@@ -13,7 +13,6 @@ header {
   position: fixed;
   top: 0;
   left: 0; /*ヘッダー固定*/
-  /*background-color: white;*/
   border-bottom: 1px solid #42406f;
   z-index: 1;
 }
@@ -74,12 +73,13 @@ nav ul li a:hover {
   width: 80%;
   height: 900px;
   background-color: white;
-  /*margin-left: 20%;*/
   margin: auto;
 }
 
 .topimage img {
   margin-top: 15%;
+  margin-left: 20%;
+  position: absolute;
 }
 
 .topimage .sp {
@@ -87,12 +87,12 @@ nav ul li a:hover {
 }
 
 h1 {
-  float: right;
+  position: absolute;
+
   font-size: 60px;
   margin-top: 30%;
-  margin-right: 25%;
+  margin-left: 35%;
 }
-/*場所調整する(floatしたときに重ねられないのを解消する)*/
 
 main .About {
   width: 100%;
@@ -134,7 +134,6 @@ main .Works {
   height: 1250px;
   background-color: #dccfe1;
   /*margin-top: 100px; /*AboutとWorksのつなぎの空白部分*/
-  /*overflow: hidden; /*Worksの上に空白*/
 }
 
 main .Works2 {
@@ -204,10 +203,10 @@ main .Works .Works2 .items img {
 
 main .Contact {
   width: 100%;
-  /*height: 800px;*/
+
   background-color: #dccfe1;
   /*margin-top: 100px; /*WorksとContactのつなぎの空白部分*/
-  overflow: hidden; /*Worksの上に空白*/
+  overflow: hidden;
   padding-top: 10%;
 }
 
@@ -216,7 +215,7 @@ main .Contact2 {
   height: 500px;
   background-color: white;
   margin: 0 auto;
-  margin-bottom: 10%; /*長さ調整する*/
+  margin-bottom: 10%;
 }
 
 .flowbtn17 {
@@ -311,8 +310,6 @@ footer {
     margin-right: 0;
   }
 
-  /*ハンバーガーメニューつくる*/
-
   .topimage {
     width: 100%;
     height: 500px;
@@ -338,17 +335,13 @@ footer {
 
   h1 {
     font-size: 60px;
-
     margin: auto;
-    margin-top: 30%;
-  } /*真ん中に寄せる*/
+    margin-top: 70%;
+  }
 
-  /* main .About {
-    width: 100%;
-    height: 600px;
-    background-color: #dccfe1;
-    margin-top: 100px; /*写真とAboutのつなぎの空白部分*/
-  /*overflow: hidden;*/
+  main .About {
+    margin-top: 10%;
+  }
 
   main .About2 {
     width: 100%;
@@ -374,27 +367,22 @@ footer {
   main .About .About2 .profileimage {
     width: 300px;
     height: 300px;
-    /*margin: 0 auto;*/
-    margin-left: -30px;
-    margin-top: -10px;
+    margin: 5%;
     position: absolute;
   }
 
   main .About .About2 .profileimage img {
     position: relative;
-    margin-left: 80px;
   }
 
   main .Works {
     width: 100%;
     height: 2000px;
     background-color: #dccfe1;
-    margin-top: 100px; /*AboutとWorksのつなぎの空白部分*/
-    /*overflow: hidden; Worksの上に空白*/
+    margin-top: 10%;
   }
   main .Works2 {
     width: 100%;
-    /*height: 1500px; /*Worksの長さに合わせて調整する*/
     margin: 0 auto;
   }
 
@@ -407,6 +395,7 @@ footer {
 
   main .Contact2 {
     width: 100%;
+    margin-top: 10%;
   }
 
   .sns {
